@@ -29,7 +29,6 @@ for (let i = 0; i < k.length; i++) {
 
 var argv = sYargs(hideBin(process.argv)).scriptName(config.command);
 
-
 for (let j = 0; j < k.length; j++) {
     argv.command(
         k[j],
