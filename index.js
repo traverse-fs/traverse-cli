@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+
 /**
  * 
  * Package: 
@@ -12,3 +13,4 @@
  * 
 */
 
+const cmd = require("./src/cli");

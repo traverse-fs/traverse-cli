@@ -56,3 +56,5 @@ argv.option('verbose', {
     .demandCommand(1, '')
     .strict()
     .parse()
+
+module.exports = argv
