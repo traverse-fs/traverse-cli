@@ -1,0 +1,49 @@
+{
+  "name": "traverse-cli",
+  "version": "0.0.4",
+  "description": "Nodejs npm module to traverse folder using code or cli or use glob patterns",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "preinstall": "",
+    "install": "",
+    "postinstall": "npm run init:cli",
+    "init:cli": "npm install -g traverse-cli --force",
+    "test": "mocha --reporter spec --recursive --config ./mocha.test.config.js"
+  },
+  "bin": {
+    "traverse": "./src/cli.js",
+    "fsutils": "./src/cli.js",
+    "fst": "./src/cli.js"
+  },
+  "keywords": [
+    "traverse",
+    "traverse files",
+    "traverse folders",
+    "search",
+    "search files",
+    "search folders",
+    "traverse-cli, traverse-fs, fssys"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/traverse-fs/traverse-cli.git"
+  },
+  "author": "Ganesh Bhat",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0",
+    "sinon": "^14.0.0"
+  },
+  "dependencies": {
+    "traverse-fs": "^0.0.4",
+    "yargs": "^17.5.1"
+  },
+  "bugs": {
+    "url": "https://github.com/traverse-fs/traverse-cli/issues"
+  },
+  "homepage": "https://github.com/traverse-fs/traverse-cli#readme"
+}
