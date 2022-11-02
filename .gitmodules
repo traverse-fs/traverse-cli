@@ -1,0 +1,3 @@
+[submodule "fssys"]
+	path = fssys
+	url = https://github.com/traverse-fs/fssys.git
